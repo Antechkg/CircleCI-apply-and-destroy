@@ -82,7 +82,7 @@ workflows:
       - plan_to_destroy:
           context: GOOGLE_CREDENTIALS
           requires:
-            - deploy
+            - hold
       
       - approve_to_destroy1:
           type:  approval
