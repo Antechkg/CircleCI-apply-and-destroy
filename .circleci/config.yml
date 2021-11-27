@@ -84,21 +84,21 @@ workflows:
           requires:
             - deploy
       
-      - approve_desroty1:
+      - approve_to_destroy1:
           type:  approval
           requires:
             - plan_to_destroy
-      - approve_desroty2:
+      - are_you_shure_to_destroy:
           type:  approval
           requires:
-            - approve_desroty1
+            - approve_to_destroy1
        
       
       - destroy:
           context: GOOGLE_CREDENTIALS 
           requires:
             
-            - approve_desroty1
-            - approve_desroty2
+            - approve_to_destroy1
+            - are_you_shure_to_destroy
           
           

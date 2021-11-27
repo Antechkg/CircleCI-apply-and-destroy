@@ -144,20 +144,23 @@
               requires:
                 - deploy
           
-          - approve_desroty1:
+          - approve_to_destroy1:
               type:  approval
               requires:
                 - plan_to_destroy
-          - approve_desroty2:
+          - are_you_shure_to_destroy:
               type:  approval
               requires:
-                - approve_desroty1
-           
-          
+                - approve_to_destroy1
+       
+      
           - destroy:
               context: GOOGLE_CREDENTIALS 
               requires:
-                
-                - approve_desroty1
-                - approve_desroty2
-                
+            
+                - approve_to_destroy1
+                - are_you_shure_to_destroy
+>view from Cirlceci application
+![add context2](./images/circleci_view1.png)
+> If you want to destoy you have to approve 2 approval part and it will destroy                
+![add context2](./images/circleci_view2.png)
