@@ -1,4 +1,26 @@
 
+# Cofigure In CIRCLECI
+![add context0](./images/add_context0.png)
+>we have to click three dotes and click **Project Settings**
+
+![add context1](./images/add_context1.png)
+>click **Organization Settings**
+
+![add context2](./images/add_context2.png)
+>Here click context , add  and create new variable. To the vars we have to put **GOOGLE_CREDENTIALS**  from credentials file which is in the **name_of_file_from_GCP.json**
+
+
+![add advanced](./images/login_to_advanced.png)
+>This is for giving **only pull request** to do it we have to click **Advanced** and there turn on next configuration
+
+![turn on ](./images/turn_on_only_pull_request.png)
+
+>After this configuration we have to change some of the file and and push to new branch and pull request new branch with master branch and then our code will work fully. 
+
+# GCP configuration 
+
+>In **IAM & ADMIN** click **Service Accounts** and add new account . configure there some parts and create new key which contains all credentials to log in . 
+
 
 # Adding CircleCI Beknazar
 
