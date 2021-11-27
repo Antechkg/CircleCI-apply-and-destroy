@@ -161,6 +161,6 @@
                 - approve_to_destroy1
                 - are_you_shure_to_destroy
 >view from Cirlceci application
-![add context2](./images/circleci_view1.png)
+![add context2](./images/circleci-view1.png)
 > If you want to destoy you have to approve 2 approval part and it will destroy                
-![add context2](./images/circleci_view2.png)
+![add context2](./images/circleci-view2.png)
